@@ -187,7 +187,7 @@ class WinToast {
   }
 
   Future<void> _dismiss(int id) {
-    return _channel.invokeMethod('hide', id);
+    return _channel.invokeMethod('dismiss', id);
   }
 
   Future<void> bringWindowToFront() {
