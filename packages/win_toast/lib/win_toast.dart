@@ -38,8 +38,8 @@ class Toast {
 
   StreamSubscription? _subscription;
 
-  void dismiss() {
-    _client._dismiss(id);
+  Future<void> dismiss() {
+    await _client._dismiss(id);
   }
 }
 
